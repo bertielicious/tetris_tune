@@ -1,0 +1,24 @@
+TETRIS_TUNE PSEUDO CODE
+
+disable PWM output
+disable 1ms timer
+clear time elapsed
+
+read first note frequency, duration and rest period and store as variables
+set PR2 to generate the required frequency
+start 1ms timer
+while time elapsed < duration
+	{
+		enable PWM
+	}
+disable PWM
+disable 1ms timer
+clear time elapsed
+
+while time elapsed < rest period
+	{
+		do nothing
+	}
+increment index of structure
+clear timer
+
